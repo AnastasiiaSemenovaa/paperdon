@@ -1,0 +1,6 @@
+/node_modules/
+/node_modules
+/.idea/vcs.xml
+/.idea/modules.xml
+/.idea/paperdon.iml
+/.idea/.gitignore
