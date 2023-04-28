@@ -4,11 +4,188 @@
     <meta charset="UTF-8">
     <title>PaperDon</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
+    <header class="header">
+      <div class="container">
+        <div class="header__box">
+          <div class="header__left">
+            <img src="images/logo.svg" alt="websites logo" class="header__logo">
+          </div>
+          <div class="header__right">
+            <div class="header__nav">
+              <nav>
+                <ul>
+                  <li>How it works</li>
+                  <li>Top experts</li>
+                  <li>Contacts</li>
+                  <li>FAQ</li>
+                </ul>
+              </nav>
+            </div>
+            <div class="btn">
+              <a href="#">Log in / Sign up</a>
+            </div>
+            <div class="btn-orange">
+              <a href="#">Hire Expert</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
-    <main></main>
+    <main>
+      <div class="container">
+        <section class="main-page">
+          <div class="main-page__box">
+            <div class="main-page__first">
+              <h1 class="main-page__title">Staying late to do homework again?</h1>
+              <p class="main-page__text">It doesn’t have to be this way! Enjoy the process of studying with the help of our caring experts who’re up to any
+              assignment you may have.</p>
+              <div>
+                <form class="form">
+                  <select>
+                    <option></option>
+                  </select>
+                  <div class="btn-orange">
+                    <a href="#">Get Help In 7 Minutes</a>
+                  </div>
+                </form>
+              </div>
+              <div class="main-page__second">
+                <img src="images/cuate.svg" alt="help with tasks" class="main-page__img" width="500px" height= "318px">
+              </div>
+            </div>
+            <div class="main-page__subjects">
+              <div>For ex.:</div>
+              <div>English</div>
+              <div>Business</div>
+              <div>Nursing</div>
+              <div>History</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="valuation">
+          <div class="valuation__box">
+            <div class="valuation__trusted">
+              <div class="valuation__data">Trusted by <span class="valuation__number">14,000+</span> happy customers and experts</div>
+            </div>
+            <div class="valuation__stars">
+              <div class="stars__site">
+                <img src="images/trustpilot.svg" alt="Trustpilot" class="trustpilot">
+                <div class="stars__rate">
+                  <span class="stars__number">4.6</span>
+                  <img src="images/stars1.svg" alt="value in stars" class="stars__group">
+                </div>
+              </div>
+              <div class="stars__site">
+                <img src="images/jabber.svg" alt="Sitejabber" class="sitejabber">
+                <div class="stars__rate">
+                  <span class="stars__number">4.6</span>
+                  <img src="images/stars2.svg" alt="value in stars" class="stars__group">
+                </div>
+              </div>
+              <div class="stars__site">
+                <img src="images/reviewsio.svg" alt="Reviews.io" class="reviewsio">
+                <div class="stars__rate">
+                  <span class="stars__number">4.7</span>
+                  <img src="images/stars3.svg" alt="value in stars" class="stars__group">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <section class="stressful">
+          <div class="stressful__box">
+            <div class="stressful__img">
+              <img src="images/stress.svg" alt="stressful student" class="stressful-student">
+            </div>
+            <div class="stressful__life">
+              <h3 class="stressful__title">We know how stressful it is to be a student:</h3>
+              <ul class="list">
+                <li class="list__item">Deadlines are always approaching and unfinished tasks pile up.</li>
+                <li class="list__item">Fears about letting the parents down never leave your mind.</li>
+                <li class="list__item">Too many tasks leave no time for favorite subjects, let alone hobbies.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="expectation">
+          <div class="expectation__box">
+            <h2 class="section__title">What do you want your life to look like?</h2>
+            <div class="expectation__comparison">
+              <div class="expectation__block reason">
+                <img src="images/exhausted.svg" alt="feel exhausted" class="reason__img">
+                <h4 class="reason__title">Manage by yourself and feel exhausted</h4>
+                <ul class="reason__list">
+                  <li class="reason__element">Read 10 books simultaneously, not for pleasure.</li>
+                  <li class="reason__element">Spend hours planning the work you won’t do on time.</li>
+                  <li class="reason__element">Think about all the requirements you have to follow.</li>
+                  <li class="reason__element">Sleep a couple of hours a day, if you’re lucky.</li>
+                </ul>
+              </div>
+
+              <div class="expectation__block reason">
+                <img src="images/relax.svg" alt="feel relaxed" class="reason__img">
+                <h4 class="reason__title">Get help from our experts and relax</h4>
+                <ul class="reason__list">
+                  <li class="reason__element reason__element--positive">Do your favorite tasks, we’ll assist with the rest.</li>
+                  <li class="reason__element reason__element--positive">Meet all deadlines, no more sleepless nights.</li>
+                  <li class="reason__element reason__element--positive">Follow all the rules: formatting styles, references, etc.</li>
+                  <li class="reason__element reason__element--positive">Live a stress-free academic life that brings you joy.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="writer">
+          <div class="writer__box">
+            <h2 class="section__title">What do you want your life to look like?</h2>
+            <div class="writer__slider">
+              <div class="expert">
+                <div class="expert__about">
+                  <div>
+                    <img src="images/online.svg" alt="writer is online" class="expert__online-img">
+                    <span class="expert__online">online</span>
+                  </div>
+                  <div class="expert__profile">
+                    <img src="images/expert.jpg" alt="The expert picture" class="expert__pic">
+                    <div class="expert__name">
+                      <div class="expert__nickname">Prof.Liam.PHD</div>
+                      <img src="images/certified.svg" alt="certified expert" class="expert__certified">
+                    </div>
+                    <div>
+                      <img src="images/rate.svg" alt="rate of the expert" class="expert__rate">
+                      <div>4.9</div>
+                      <div>| 250 reviews</div>
+                    </div>
+                    
+                  </div>
+                </div>
+
+                <div class="expert__reviews"></div>
+              </div>
+
+
+            </div>
+        </div>
+        </section>
+
+
+
+
+
+
+
+      </div>
+    </main>
     <footer></footer>
   </body>
 </html>

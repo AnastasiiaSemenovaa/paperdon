@@ -1,6 +1,22 @@
-$primary-color: #2196f3;
+$main-title-color: #1D293F;
+$main-text-color: #475569;
+$highlight-color: #6AA6DA;
 
 body {
   background-color: #fff;
-  color: $primary-color;
+  color: var($main-text-color);
+}
+
+
+//font-family: 'Inter', sans-serif;
+// font-family: 'Rubik', sans-serif;
+
+.list__item {
+  list-style-image: url(images/bullet.svg);
+}
+.reason__element {
+  list-style-image: url(images/exhausted-bullet.svg);
+}
+.reason__element--positive {
+  list-style-image: url(images/relax-bullet.svg);
 }
