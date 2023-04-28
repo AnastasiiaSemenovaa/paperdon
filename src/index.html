@@ -17,58 +17,74 @@
           </div>
           <div class="header__right">
             <div class="header__nav">
-              <nav>
-                <ul>
-                  <li>How it works</li>
-                  <li>Top experts</li>
-                  <li>Contacts</li>
-                  <li>FAQ</li>
+              <nav class="navigation">
+                <ul class="header__list">
+                  <li class="header__link">
+                    <a herf="#">How it works</a>
+                  </li>
+                  <li class="header__link">
+                    <a herf="#">Top experts</a>
+                  </li>
+                  <li class="header__link">
+                    <a herf="#">Contacts</a>
+                  </li>
+                  <li class="header__link">
+                    <a herf="#">FAQ</a>
+                  </li>
                 </ul>
               </nav>
             </div>
-            <div class="btn">
-              <a href="#">Log in / Sign up</a>
+            <div class="header__login">
+              <a href="#" class="header__log-link">Log in / Sign up</a>
             </div>
             <div class="btn-orange">
-              <a href="#">Hire Expert</a>
+              <a href="#" class="btn-orange__link">Hire Expert</a>
             </div>
           </div>
         </div>
       </div>
     </header>
     <main>
-      <div class="container">
-        <section class="main-page">
+      <section class="main-page">
+        <div class="container">
           <div class="main-page__box">
             <div class="main-page__first">
               <h1 class="main-page__title">Staying late to do homework again?</h1>
               <p class="main-page__text">It doesn’t have to be this way! Enjoy the process of studying with the help of our caring experts who’re up to any
               assignment you may have.</p>
-              <div>
-                <form class="form">
-                  <select>
-                    <option></option>
+              <div class="main-page__form">
+                <form action="/" method="get" class="form">
+                  <select name="essay-type" class="form__select">
+                    <option value="" default selected>What subject do you need help with? </option>
+                    <option value="english">English</option>
+                    <option value="literature">Literature</option>
+                    <option value="history">History</option>
+                    <option value="architecture">Architecture</option>
+                    <option value="math">Math</option>
+                    <option value="law">Law</option>
                   </select>
                   <div class="btn-orange">
-                    <a href="#">Get Help In 7 Minutes</a>
+                    <a href="#" class="btn-orange__link">Get Help In 7 Minutes</a>
                   </div>
                 </form>
               </div>
-              <div class="main-page__second">
-                <img src="images/cuate.svg" alt="help with tasks" class="main-page__img" width="500px" height= "318px">
+              <div class="main-page__subjects">
+                <div class="main-page__example">For ex.:</div>
+                <div class="main-page__discipline">English</div>
+                <div class="main-page__discipline">Business</div>
+                <div class="main-page__discipline">Nursing</div>
+                <div class="main-page__discipline">History</div>
               </div>
             </div>
-            <div class="main-page__subjects">
-              <div>For ex.:</div>
-              <div>English</div>
-              <div>Business</div>
-              <div>Nursing</div>
-              <div>History</div>
+            <div class="main-page__second">
+              <img src="images/cuate.svg" alt="help with tasks" class="main-page__img" width="500px" height="318px">
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="valuation">
+      <section class="valuation">
+        <div class="container">
           <div class="valuation__box">
             <div class="valuation__trusted">
               <div class="valuation__data">Trusted by <span class="valuation__number">14,000+</span> happy customers and experts</div>
@@ -97,10 +113,12 @@
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
 
-        <section class="stressful">
+      <section class="stressful">
+        <div class="container">
           <div class="stressful__box">
             <div class="stressful__img">
               <img src="images/stress.svg" alt="stressful student" class="stressful-student">
@@ -114,12 +132,13 @@
               </ul>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="expectation">
+      <section class="expectation">
+        <div class="container">
+          <h2 class="section__title">What do you want your life to look like?</h2>
           <div class="expectation__box">
-            <h2 class="section__title">What do you want your life to look like?</h2>
-            <div class="expectation__comparison">
               <div class="expectation__block reason">
                 <img src="images/exhausted.svg" alt="feel exhausted" class="reason__img">
                 <h4 class="reason__title">Manage by yourself and feel exhausted</h4>
@@ -143,40 +162,82 @@
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="writer">
+      <section class="writer">
+        <div class="container">
           <div class="writer__box">
-            <h2 class="section__title">What do you want your life to look like?</h2>
+            <h2 class="section__title">Top certified experts</h2>
             <div class="writer__slider">
               <div class="expert">
                 <div class="expert__about">
-                  <div>
-                    <img src="images/online.svg" alt="writer is online" class="expert__online-img">
-                    <span class="expert__online">online</span>
-                  </div>
-                  <div class="expert__profile">
-                    <img src="images/expert.jpg" alt="The expert picture" class="expert__pic">
-                    <div class="expert__name">
-                      <div class="expert__nickname">Prof.Liam.PHD</div>
-                      <img src="images/certified.svg" alt="certified expert" class="expert__certified">
+                    <div class="expert__status">
+                      <img src="images/online.svg" alt="writer is online" class="expert__online-img">
+                      <span class="expert__online">online</span>
                     </div>
-                    <div>
-                      <img src="images/rate.svg" alt="rate of the expert" class="expert__rate">
-                      <div>4.9</div>
-                      <div>| 250 reviews</div>
+                    <div class="expert__profile">
+                      <img src="images/expert.jpg" alt="The expert picture" class="expert__pic">
+                      <div class="expert__name">
+                        <div class="expert__nickname">Prof.Liam.PHD</div>
+                        <img src="images/certified.svg" alt="certified expert" class="expert__certified">
+                      </div>
+                      <div class="expert__estimate">
+                        <img src="images/rate.svg" alt="rate of the expert" class="expert__rate">
+                        <div class="expert__mark">4.9</div>
+                        <div class="expert__review-number">| 250 reviews</div>
+                      </div>
+                    <div class="expert__projects">
+                      <div class="expert__completed">
+                        <img src="images/case.svg" alt="case logo" class="expert__case">
+                        <span class="expert__type">Completed projects</span>
+                      </div>
+                      <div class="expert__number">350</div>
                     </div>
-                    
+                    <div class="expert__projects">
+                      <div class="expert__joined">
+                        <img src="images/silhouette.svg" alt="silhouette logo" class="expert__case">
+                        <span class="expert__type">Joined us</span>
+                      </div>
+                      <div class="expert__number">Sep 2018</div>
+                    </div>
+                    <div class="btn-orange expert__button">
+                      <a href="#" class="btn-orange__link">Get In Touch</a>
+                    </div>
                   </div>
                 </div>
 
-                <div class="expert__reviews"></div>
+                <div class="expert__reviews">
+                  <div class="expert__heading">Reviews</div>
+                  <div class="expert__comment">
+                    <div class="expert__user">
+                      <div class="expert__user-number">user4562</div>
+                      <div class="expert__rating">
+                        <img src="images/rate.svg" alt="rating" class="expert__rating-img">
+                        <span class="expert__rate-number">5</span>
+                      </div>
+                    </div>
+                    <div class="expert__view">Thank you Kellar, she was able to complete way before the time it was due. I’m sure I’ll hire her again if needed...</div>
+                  </div>
+                  <div class="expert__comment">
+                    <div class="expert__user">
+                      <div class="expert__user-number">user4562</div>
+                      <div class="expert__rating">
+                        <img src="images/rate.svg" alt="rating" class="expert__rating-img">
+                        <span>5</span>
+                      </div>
+                    </div>
+                    <div class="expert__view">Thank you, for the professionally written letter to the hiring manager of the department I have interest transferring
+                    to. I can work off this and continue to add to this letter for a position on the team..</div>
+                  </div>
+                  <div class="expert__see-review">
+                    <a href="#" class="expert__link">See all reviews</a>
+                  </div>
+                </div>
               </div>
-
-
             </div>
         </div>
-        </section>
+      </section>
 
 
 
@@ -184,7 +245,7 @@
 
 
 
-      </div>
+    
     </main>
     <footer></footer>
   </body>
