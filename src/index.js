@@ -31,6 +31,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     changeLoginBtn();
     window.addEventListener('resize', function () {
         changeLoginBtn();
+        changeHireBtn();
     });
 
 
@@ -47,4 +48,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
   
 
   titleColor();
+  
+  function changeHireBtn() {
+  let hireBtn = document.querySelector(".header__hire-btn");
+  if (hireBtn) {
+    if (window.innerWidth<= 767) {
+      hireBtn.innerHTML="Hire";
+    }
+    else {
+      hireBtn.innerHTML="Hire expert";
+    }
+  }
+  }
+  changeHireBtn();
 });
