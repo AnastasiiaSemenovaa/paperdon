@@ -26,9 +26,25 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }
     }
 
+
+ 
     changeLoginBtn();
     window.addEventListener('resize', function () {
-        changeLoginBtn()
+        changeLoginBtn();
     });
 
+
+ let colorChange = document.getElementById("redColor");
+  function titleColor(){
+     if (window.innerWidth <= 767) {
+      colorChange.style.color="red";
+    } else {
+      window.addEventListener('resize', function () {
+        colorChange.style.color="red";
+    });
+      }
+  }
+  
+
+  titleColor();
 });
