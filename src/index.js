@@ -32,33 +32,71 @@ document.addEventListener("DOMContentLoaded", function(event) {
     window.addEventListener('resize', function () {
         changeLoginBtn();
         changeHireBtn();
+        titleColor();
     });
 
 
- let colorChange = document.getElementById("redColor");
   function titleColor(){
-     if (window.innerWidth <= 767) {
-      colorChange.style.color="red";
-    } else {
-      window.addEventListener('resize', function () {
-        colorChange.style.color="red";
-    });
-      }
+    let colorChange = document.querySelectorAll(".main-page__title-js");
+    colorChange.forEach(event => {
+        event.style.color="orange";
+    })
+
+    let currentWidth = window.innerWidth;
+    setTimeout(function () {
+        if (currentWidth === window.innerWidth ) {
+            if (window.innerWidth <= 767) {
+                colorChange.forEach(event => {
+                    event.style.color="red";
+                })
+
+            } else {
+                colorChange.forEach(event => {
+                    event.style.color="black";
+                })
+            }
+        }
+    }, 1000)
+
   }
   
 
   titleColor();
   
   function changeHireBtn() {
-  let hireBtn = document.querySelector(".header__hire-btn");
-  if (hireBtn) {
-    if (window.innerWidth<= 767) {
-      hireBtn.innerHTML="Hire";
-    }
-    else {
-      hireBtn.innerHTML="Hire expert";
-    }
-  }
+    let hireBtn = document.querySelector(".header__hire-btn");
+      if (hireBtn) {
+        if (window.innerWidth<= 767) {
+          hireBtn.innerHTML="Hire";
+        }
+        else {
+          hireBtn.innerHTML="Hire expert";
+        }
+      }
   }
   changeHireBtn();
+
+
+    const anchors = document.querySelectorAll('.header__link-item')
+
+    for (let anchor of anchors) {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            burger.classList.remove('open');
+            topNav.classList.remove('open');
+
+            const blockID = anchor.getAttribute('href').substr(1)
+
+            document.getElementById(blockID).scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            })
+
+
+        })
+    }
+
+
+
+
 });

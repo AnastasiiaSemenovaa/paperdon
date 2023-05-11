@@ -37,10 +37,11 @@ body {
 }
 
 .container {
-  max-width: 1210px;
+  width: 1210px;
   margin: auto;
   padding: 0 15px;
   position: relative;
+  max-width: 100%;
 
   // @media(max-width: 1250px) {
   //   max-width: 950px;
@@ -60,19 +61,18 @@ body {
 }
 
 .header {
-
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 105;
+  background: #FFFFFF;
+  border-bottom: 1px solid #DEE4ED;
   &__box {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    background: #FFFFFF;
-    border-bottom: 1px solid #DEE4ED;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 105;
   }
 
   &__right {
@@ -111,7 +111,7 @@ body {
       font-size: 16px;
       line-height: 24px;
       cursor: pointer;
-      
+      position: relative;
       &:hover {
         background: #E1EDF8;
       }
@@ -132,8 +132,20 @@ body {
       color: #475569;
       cursor: pointer;
       &:hover {
-          color: $highlight-color;
+        color: $highlight-color;
+      }
+
+      @media (max-width: 1200px) {
+        &:after {
+          content: '';
+          display: block;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0;
         }
+      }
     }
   }
 
@@ -290,7 +302,6 @@ body {
 }
 
 .main-page {
-  margin-top: 80px;
   padding: 80px;
   background: #FFFFFF;
   &__box {
@@ -763,24 +774,36 @@ option[default] {
 }
 
 .happy {
-  padding: 0 130px;
   background: #475569;
   color: #FFFFFF;
   position: relative;
-
+  overflow: hidden;
   &__box {
     display: flex;
     justify-content: center;
     align-items: center;
+    &:before {
+      content: '';
+      height: 55px;
+      display: block;
+      width: 50%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: linear-gradient(-180deg, #475569, transparent);
+    }
   }
   &__element {
-    width: calc(61% - 60px);
-    margin-right: 40px;
   }
   &__students {
-    width: calc(49% - 60px);
+    width: calc(45.72% - 60px);
+    flex-shrink: 0;
+    margin-left: 120px;
   }
-
+  &__slider {
+    margin-top: -25px;
+    margin-bottom: -100px;
+  }
   &__heading {
     margin-bottom: 16px;
     font-weight: 600;
@@ -893,6 +916,7 @@ option[default] {
     position: relative;
     margin: 0 auto;
 
+    box-shadow: 18px 19px 0 #A788CE;
     &::before {
       content: "";
       width: 580px;
