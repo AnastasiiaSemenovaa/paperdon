@@ -1151,6 +1151,7 @@ option[default] {
     justify-content: space-between;
   }
   &__heading {
+    display: block;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -1239,4 +1240,102 @@ option[default] {
   &__right {
     flex-shrink: 0;
   }
+}
+.footer {
+  background: #475569;
+  color: #fff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+
+  &__box {
+    padding: 100px 0;
+    display: grid;
+    grid-template-areas: 
+    "footer__useful footer__map footer__accept"
+    "footer__useful footer__map footer__contact"
+    "footer__owned footer__map footer__contact";
+    grid-template-columns: 1fr 320px 180px;
+  }
+  &__useful {
+    grid-area: footer__useful;
+    margin-right: 150px;
+    &-title {
+      margin-bottom: 20px;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    &-text {
+      margin-bottom: 31px;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      color: #D3DBE7;
+    }
+  }
+  &__owned {
+    grid-area: footer__owned;
+    &-text {
+      margin-top: 10px;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      color: #D3DBE7;
+    }
+  }
+  &__map {
+    grid-area: footer__map;
+    margin-right: 120px;
+    &-title {
+      margin-bottom: 20px;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  &__item {
+    list-style: none;
+    margin-bottom: 15px;
+  }
+  &__link {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height:  20px ;
+    color: #E1EDF8;
+  }
+  &__accept {
+    grid-area: footer__accept;
+    margin-bottom: 30px;
+    &-title {
+      margin-bottom: 20px;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    &-card {
+      margin-right: 15px;
+    }
+  }
+  &__contact {
+    grid-area: footer__contact;
+    &-title {
+      margin-bottom: 20px;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    &-block {
+      display: flex;
+      gap: 5px;
+    }
+    &-way {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px ; 
+      color: #E1EDF8;
+    }
+  }
+
+
 }
