@@ -20,19 +20,19 @@
               <nav class="navigation">
                 <ul class="header__list">
                   <li class="header__link">
-                    <a href="#" class="header__link-item">How it works</a>
+                    <a href="#page-work" class="header__link-item">How it works</a>
                   </li>
                   <li class="header__link">
-                    <a href="#part" class="header__link-item">Top experts</a>
+                    <a href="#page-expert" class="header__link-item">Top experts</a>
                   </li>
                   <li class="header__link">
-                    <a href="#" class="header__link-item">Contacts</a>
+                    <a href="#page-contact" class="header__link-item">Contacts</a>
                   </li>
                   <li class="header__link">
-                    <a href="#" class="header__link-item">FAQ</a>
+                    <a href="#page-faq" class="header__link-item">FAQ</a>
                   </li>
                   <li class="header__link">
-                    <a href="#" class="header__link-item">Terms of Use / Privacy Policy</a>
+                    <a href="#page-terms" class="header__link-item">Terms of Use / Privacy Policy</a>
                   </li>
                 </ul>
               </nav>
@@ -178,8 +178,8 @@
 
       <section class="writer">
         <div class="container">
-          <div class="writer__box">
-            <h2 class="section__title">Top certified experts</h2>
+          <div class="writer__box" id="page-expert">
+            <h2 class="section__title" >Top certified experts</h2>
             <div class="writer__slider">
               <div class="expert">
                 <div class="expert__about">
@@ -277,9 +277,9 @@
 
       <section class="process">
         <div class="container">
-          <div class="process__box">
+          <div class="process__box" id="page-work">
             <h2 class="section__title process__title">PaperDon connects students <br/> with experts</h2>
-            <div class="process__explained" id="part">
+            <div class="process__explained">
               <div class="process__step">
                 <div class="process__first">
                   <img src="images/process1.svg" class="process__img" width="400px" height="400px">
@@ -548,16 +548,16 @@
 
 
 
-      <section class="faq">
+      <section class="faq" id="page-faq">
         <div class="container">
           <h2 class="section__title">Frequently asked questions</h2>
           <div class="faq__list">
             <div class="faq__item question">
               <div class="question__top">
                 <div class="question__heading">How does PaperDon work?</div>
-                <img src="./images/plus.svg" alt="plus" class="question__right" width="24px" height="28">
+                <img src="./images/plus.svg" alt="plus" class="question__right toggle" width="24px" height="28">
               </div>
-              <p class="question__text">We have a team of professional writers and editors who work on the orders. All of them pass a complicated process of application before they can start working on any assignments.</p>
+              <di class="question__text list-text">We have a team of professional writers and editors who work on the orders. All of them pass a complicated process of application before they can start working on any assignments.</p>
             </div>
 
             <div class="faq__item question">
@@ -630,7 +630,7 @@
 
     <footer class="footer">
       <div class="container">
-        <div class="footer__box">
+        <div class="footer__box" id="page-terms">
           <div class="footer__useful">
             <div class="footer__useful-title">Services Will Be Useful For</div>
             <p class="footer__useful-text">Additional insight into the subject with appropriate detailing of key questions to cover; <br/> Provision of reasoning for your own statements and further research; <br />Paraphrasing according to educational guidelines issued by your college or university in regards to plagiarism and acceptable paraphrase; <br/>Use of citations (please follow the citation recommendations)</p>
@@ -644,19 +644,19 @@
           <div class="footer__map">
             <ul class="footer__map-title footer__list">Site Map</ul>
             <li class="footer__item">
-              <a href="#" class="footer__link">How it works</a>
+              <a href="#page-work" class="footer__link">How it works</a>
             </li>
             <li class="footer__item">
-              <a href="#" class="footer__link">Top experts</a>
+              <a href="#page-expert" class="footer__link">Top experts</a>
             </li>
             <li class="footer__item">
-              <a href="#" class="footer__link">Contacts</a>
+              <a href="#page-contact" class="footer__link">Contacts</a>
             </li>
             <li class="footer__item">
-              <a href="#" class="footer__link">FAQ</a>
+              <a href="#page-faq" class="footer__link">FAQ</a>
             </li>
             <li class="footer__item">
-              <a href="#" class="footer__link">Terms of Use / Privacy Policy</a>
+              <a href="#page-terms" class="footer__link">Terms of Use / Privacy Policy</a>
             </li>
           </div>
 
@@ -669,7 +669,7 @@
             </div>
           </div>
 
-          <div class="footer__contact">
+          <div class="footer__contact" id="page-contact">
             <div class="footer__contact-title">Contact us</div>
             <div class="footer__contact-block">
               <img src="./images/phone.svg" alt="Phone" class="footer__phone" width="20" height="20">
@@ -680,8 +680,6 @@
               <div class="footer__contact-way">support@paperdon.com</div>
             </div>
           </div>
-
-
         </div>
       </div>
     </footer>

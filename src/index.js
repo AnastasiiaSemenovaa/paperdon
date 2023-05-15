@@ -97,6 +97,22 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
 
 
+//  const toggleButtons = document.querySelectorAll('.toggle-btn');
+
+//   toggleButtons.forEach((button) => {
+//     button.addEventListener('click', function () {
+//       const listItem = this.parentNode;
+//       const listText = listItem.querySelector('.list-text');
+
+//       if (listText.style.display === 'none') {
+//         listText.style.display = 'inline';
+//         this.textContent = '-';
+//       } else {
+//         listText.style.display = 'none';
+//         this.textContent = '+';
+//       }
+//     });
+//   });
 
 
 });
