@@ -1,6 +1,22 @@
+import './libs/swiper-bundle.min.scss';
 import './style.scss';
+import Swiper, { Navigation, Pagination } from 'swiper';
 
 document.addEventListener("DOMContentLoaded", function(event) {
+
+    let swiper = new Swiper(".writer__slider", {
+        modules: [Navigation, Pagination],
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        slidesPerView: 1.6,
+        spaceBetween: 40,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
 
     let burger = document.querySelector('.burger');
     let topNav = document.querySelector('.header__nav');
@@ -97,22 +113,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
 
 
- const toggleButtons = document.querySelectorAll('.toggle-btn');
-
-  for (let toggleButton of toggleButtons) {
-    button.addEventListener('click', function () {
-      const listItem = this.parentNode;
-      const listText = listItem.querySelector('.list-text');
-
-      if (listText.style.display === 'none') {
-        listText.style.display = 'inline';
-        this.textContent = '-';
-      } else {
-        listText.style.display = 'none';
-        this.textContent = '+';
-      }
-    });
-  };
-
+ const toggleButtons = document.querySelectorAll('.question');
+    toggleButtons.forEach(e => {
+        e.addEventListener('click', function () {
+            this.classList.toggle('open');
+        });
+    })
 
 });

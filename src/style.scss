@@ -528,8 +528,18 @@ option[default] {
 }
 
 .writer {
+  overflow: hidden;
   padding: 100px;
   background: #fff;
+  .swiper-button-next {
+    right: -20px;
+    &:after {
+      display: none;
+    }
+  }
+  .swiper {
+    overflow: inherit;
+  }
 }
 
 .expert {
@@ -1153,20 +1163,45 @@ option[default] {
     color: #475569;
   }
   &__text {
-    margin-top: 20px;
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
     color: #1D293F;
+    visibility: hidden;
+    opacity: 0;
+    max-height: 0;
+    transition: 0.3s;
+    overflow: hidden;
+    .open & {
+      margin-top: 20px;
+      opacity: 1;
+      visibility: visible;
+      max-height: 1000px;
+    }
   }
   &__right {
     display: block;
     flex-shrink: 0;
   }
-}
-
-.list-text {
-  display: none;
+  &__toggle {
+    span {
+      font-size: 0;
+      height: 2px;
+      width: 20px;
+      background: #475569;
+      display: block;
+      border-radius: 5px;
+      transition: 0.3s;
+      &:last-child {
+        transform: rotate(90deg);
+        margin-top: -2px;
+        .open &{
+          transform: rotate(0);
+          opacity: 0;
+        }
+      }
+    }
+  }
 }
 
 
