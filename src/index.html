@@ -74,7 +74,7 @@
                     <option value="math">Math</option>
                     <option value="law">Law</option>
                   </select>
-                  <div class="btn-orange">
+                  <div class="btn-orange btn-orange--tel">
                     <a href="#" class="btn-orange__link">Get Help In 7 Minutes</a>
                   </div>
                 </form>
@@ -151,7 +151,7 @@
           <h2 class="section__title">What do you want your life to look like?</h2>
           <div class="expectation__box">
               <div class="expectation__block reason">
-                <img src="images/exhausted.svg" alt="feel exhausted" class="reason__img">
+                <img src="images/exhausted.svg" alt="feel exhausted" class="reason__img reason__img--tel">
                 <h4 class="reason__title">Manage by yourself and feel exhausted</h4>
                 <ul class="reason__list">
                   <li class="reason__element">Read 10 books simultaneously, not for pleasure.</li>
@@ -451,12 +451,16 @@
                     </div>
                   </div>
                 </div>
-                <div class="swiper-button-next">
-                  <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 1.5L8.5 9L1 16.5" stroke="#6AA6DA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <div class="swiper-button-next ">
+                  <svg class="swiper__go" width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1.5L8.5 9L1 16.5" stroke="#475569" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
                 </div>
-                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-prev">
+                  <svg class="swiper__go" width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 16.5L1.5 9L9 1.5" stroke="#475569" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </div>
                 <div class="swiper-pagination"></div>
               </div>
           </div>
@@ -851,7 +855,7 @@
 
           <div class="footer__owned">
             <div class="footer__owned-title">2022 © PaperDon.com</div>
-            <p class="footer__owned-text">PaperDon.com is owned and operated by RATATATA LTD,<br />1000, Vitosha 48 str., Sofia, Bulgaria</p>
+            <p class="footer__owned-text">PaperDon.com is owned and operated by RATATATA LTD, 1000, Vitosha 48 str., Sofia, Bulgaria</p>
           </div>
 
           <div class="footer__map">
@@ -888,14 +892,16 @@
 
           <div class="footer__contact" id="page-contact">
             <div class="footer__contact-title">Contact us</div>
-            <div class="footer__contact-block">
-              <img src="./images/phone.svg" alt="Phone" class="footer__phone" width="20" height="20">
-              <div class="footer__contact-way">+1 (844) 335 1283</div>
-            </div>
-            <div class="footer__contact-block">
-              <img src="./images/mail.svg" alt="Mail" class="footer__mail" width="20" height="20">
-              <div class="footer__contact-way">support@paperdon.com</div>
-            </div>
+              <div class="footer__contact-us">
+                <div class="footer__contact-block">
+                  <img src="./images/phone.svg" alt="Phone" class="footer__phone" width="20" height="20">
+                  <a href="tel:+18443351283" class="footer__contact-way">+1 (844) 335 1283</a>
+                </div>
+                <div class="footer__contact-block">
+                  <img src="./images/mail.svg" alt="Mail" class="footer__mail" width="20" height="20">
+                  <a href="mailto:support@paperdon.com" class="footer__contact-way">support@paperdon.com</a>
+                </div>
+              </div>
           </div>
         </div>
       </div>
