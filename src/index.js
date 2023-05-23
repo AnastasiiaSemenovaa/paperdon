@@ -10,8 +10,22 @@ document.addEventListener("DOMContentLoaded", function(event) {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
-        slidesPerView: 1.6,
-        spaceBetween: 40,
+        
+        breakpoints: {  
+          1250: {
+            slidesPerView: 1.6,
+            spaceBetween: 40,},
+          992: {
+            slidesPerView: 1,
+            spaceBetween: 40,},
+          767: {
+            slidesPerView: 1,
+            spaceBetween: 1000, },
+        },
+        
+        loop: true,
+        // slidesPerView: 1.6,
+        // spaceBetween: 40,
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
