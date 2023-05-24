@@ -1586,9 +1586,16 @@ option[default] {
     text-align: justify;
     display: block;
     margin: 0 auto;
+    @media (max-width: 992px) {
+      width: 100%;
+    }
+  }
+  &--title{
+    text-align: justify;
   }
   &__text {
     margin-bottom: 30px;
+
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 400;
