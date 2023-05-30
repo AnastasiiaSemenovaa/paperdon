@@ -12,15 +12,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
         },
         
         breakpoints: {  
-          1250: {
+          992: {
             slidesPerView: 1.6,
             spaceBetween: 40,},
-          992: {
+          0: {
             slidesPerView: 1,
-            spaceBetween: 40,},
-          767: {
-            slidesPerView: 1,
-            spaceBetween: 1000, },
+            spaceBetween: 40, },
         },
         
         loop: true,

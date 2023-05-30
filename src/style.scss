@@ -319,7 +319,7 @@ body {
 }
 
 .main-page {
-  padding: 80px;
+  padding: 80px 0;
   background: #FFFFFF;
   position: relative;
   &__box {
@@ -412,7 +412,7 @@ option[default] {
 
 
 .valuation {
-  padding: 25px;
+  padding: 25px 0;
 
   &__box {
     display: flex;
@@ -480,7 +480,7 @@ option[default] {
 }
 
 .stressful {
-  padding: 100px;
+  padding: 100px 0;
   background: #fff;
   @media (max-width: 767px) {
     padding: 20px;
@@ -540,7 +540,7 @@ option[default] {
 }
 
 .expectation {
-  padding: 100px;
+  padding: 100px 0;
   background: #F7F8FC;
   @media (max-width: 767px) {
     padding: 20px;
@@ -616,7 +616,7 @@ option[default] {
 
 .writer {
   overflow: hidden;
-  padding: 100px;
+  padding: 100px 0;
   background: #fff; 
   @media (max-width: 992px) {
     padding: 80px 24px;
@@ -625,95 +625,110 @@ option[default] {
   @media (max-width: 767px) {
     padding: 60px 20px;
   }
+
+
+
 }
-.swiper {
-  overflow: inherit;
+.vertical-slider {
   position: relative;
-
-  &-pagination {
-    display: block;
+  .container {
+    position: static;
+  }
+  .swiper {
+    overflow: inherit;
     position: relative;
-  }
-  &-pagination-bullet {
-    border-radius: 0;
-    width: 50px;
-    height: 4px;
-    background: #6AA6DA;
-    border-radius: 10px;
-  }
 
-  &-button-next {
-    width: 110px;
-    height: 100%;
-    background: #F7F8FC;
-    border-width: 1px 0px 1px 1px;
-    border-style: solid;
-    border-color: #E1EDF8;
-    border-radius: 25px 0px 0px 25px;
-    position: absolute;
-    top: 22px;
-    right: -160px;
-    cursor: pointer;
-    &:after {
-      display: none;
-    }
-    &:before {
-      content: '';
-      height: 100%;
+    &-pagination {
       display: block;
-      width: 125px;
-      position: absolute;
-      top: 0;
-      right: 110px;
-      transform: rotate(-180deg);
-      background: linear-gradient(90deg, #FFFFFF 21.6%, rgba(255, 255, 255, 0) 99.11%);
+      bottom: -50px;
     }
-    @media (max-width: 992px) {
-      height: 88px;
-      top: 220px;
-      right: -50px;
-      &:before {
+    &-pagination-bullet {
+      border-radius: 0;
+      width: 50px;
+      height: 4px;
+      background: #6AA6DA;
+      border-radius: 10px;
+    }
+
+    &-button-next {
+      width: 110px;
+      height: 100%;
+      background: #F7F8FC;
+      border-width: 1px 0px 1px 1px;
+      border-style: solid;
+      border-color: #E1EDF8;
+      border-radius: 25px 0px 0px 25px;
+      position: absolute;
+      top: 22px;
+      right: 0px;
+      cursor: pointer;
+      &:after {
         display: none;
       }
-    } 
-    @media (max-width: 767px) {
-      height: 56px;
-      top: 410px;
-      right: -80px;
+      &:before {
+        content: '';
+        height: 100%;
+        display: block;
+        width: 125px;
+        position: absolute;
+        top: 0;
+        right: 110px;
+        transform: rotate(-180deg);
+        background: linear-gradient(90deg, #FFFFFF 21.6%, rgba(255, 255, 255, 0) 99.11%);
+      }
+      @media (max-width: 992px) {
+        height: 88px;
+        top: 220px;
+        right: 0px;
+        &:before {
+          display: none;
+        }
+      }
+      @media (max-width: 767px) {
+        height: 56px;
+        top: 410px;
+        right: 0px;
+      }
     }
-  }
-  &-button-prev {
-    width: 110px;
-    height: 100%;
-    background: #F7F8FC;
-    border-width: 1px 1px 1px 0px;
-    border-style: solid;
-    border-color: rgba(211, 219, 231, 0.5);
-    border-radius: 0px 25px 25px 0px;
-    position: absolute;
-    left: -150px;
-    top: 22px;
-    cursor: pointer;
+    &-button-prev {
+      width: 110px;
+      height: 100%;
+      background: #F7F8FC;
+      border-width: 1px 1px 1px 0px;
+      border-style: solid;
+      border-color: rgba(211, 219, 231, 0.5);
+      border-radius: 0px 25px 25px 0px;
+      position: absolute;
+      left: 0;
+      top: 22px;
+      cursor: pointer;
 
-    &:after {
-      display: none;
+      &:after {
+        display: none;
+      }
+      @media (max-width: 992px) {
+        height: 88px;
+        top: 220px;
+        left: 0;
+      }
+      @media (max-width: 767px) {
+        height: 56px;
+        top: 410px;
+        left: 0;
+      }
+      @media (max-width: 480px) {
+        height: 56px;
+        top: 410px;
+        left: 0;
+      }
     }
-    @media (max-width: 992px) {
-      height: 88px;
-      top: 220px;
-      left: -40px;
+    &__go:hover {
+      path {
+        stroke: #6AA6DA;
+      }
     }
-    @media (max-width: 767px) {
-      height: 56px;
-      top: 410px;
-      left: -100px;
-    }
-  }
-  &__go:hover {
-    fill: #6AA6DA;
   }
 }
-
 
 
 .expert {
@@ -883,20 +898,23 @@ option[default] {
     padding: 10px;
     display: flex;
     justify-content: center;
-    // position: relative;
-        @media (max-width: 767px) {
-          &:before {
-            content: "";
-            height: 40px;
-            display: block;
-            transform: rotate(-180deg);
-            background: #00B67B;
-            // background: linear-gradient(180deg, #FFFFFF 66.36%, rgba(255, 255, 255, 0) 100%);
-            // position: absolute;
-            top: 10px;
-            left: 0;
-          }
-        }
+    position: relative;
+    @media (max-width: 767px) {
+      margin: 0px;
+      &:before {
+        content: "";
+        height: 50px;
+        display: block;
+        transform: rotate(-180deg);
+        background: #00B67B;
+        background: linear-gradient(180deg, #FFFFFF 66.36%, rgba(255, 255, 255, 0) 100%);
+        position: absolute;
+        top: -38px;
+        left: 0;
+        width: 100%;
+
+      }
+    }
   }
 
   &__link {
@@ -915,7 +933,7 @@ option[default] {
 }
 
 .benefits {
-  padding: 35px 130px;
+  padding: 35px 0;
   background: #A788CE;
   font-weight: 400;
   font-size: 18px;
@@ -923,10 +941,10 @@ option[default] {
   color: #FFFFFF;
   text-align: center;
   @media (max-width: 992px) {
-    padding: 35px 24px;
+    padding: 35px 0px;
   }
   @media (max-width: 767px) {
-    padding: 25px 20px;
+    padding: 25px 0px;
   }
 
   &__box {
@@ -1344,7 +1362,7 @@ option[default] {
   }
 }
 .safety {
-  padding: 100px;
+  padding: 100px 0;
   @media (max-width: 767px) {
     padding: 80px 20px;
   }
@@ -1755,9 +1773,17 @@ option[default] {
       flex-direction: column;
     }
   }
+  &__list {
+    @media (max-width: 992px) {
+      display: flex;
+    }
+  }
   &__item {
     list-style: none;
     margin-bottom: 15px;
+    @media (max-width: 992px) {
+      margin-right: 15px;
+    }
   }
   &__link {
     text-decoration: none;
